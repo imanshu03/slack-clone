@@ -1,0 +1,61 @@
+@import '../Variables.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: $slack-color;
+    color: $white;
+    height: 6%;
+
+    &__left {
+        flex: 0.3;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+ 
+        > .MuiAvatar-root {
+            margin: {
+                left: 30px;
+                right: auto;
+            }
+        }
+    }
+
+    &__search {
+        flex: 0.4;
+        background-color: $slack-color-bright;
+        text-align: center;
+        display: flex;
+        padding: 0 50px;
+        border-radius: 6px;
+        border: 1px solid gray;
+
+        > input {
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            min-width: 35vw;
+            outline: none;
+            color: $white;
+        }
+    }
+
+    &__right {
+        flex: 0.3;
+        display: flex;
+        align-items: flex-end;
+        
+        > .MuiSvgIcon-root {
+            margin: {
+                left: auto;
+                right: 20px;
+            }
+        }
+
+        > .MuiSvgIcon-root:last-of-type {
+            margin-left: 0px;
+        }
+    }
+}

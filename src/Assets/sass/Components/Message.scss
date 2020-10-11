@@ -1,0 +1,32 @@
+.message {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+
+    > img,
+    .MuiSvgIcon-root {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    &__info {
+        padding-left: 10px;
+        > h4 {
+            margin: 0;
+        }
+        > p {
+            margin: 0;
+        }
+    }
+
+    .message_timestamp {
+        padding-left: 4px;
+        color: gray;
+        font: {
+            size: 14px;
+            weight: 300;
+        }
+    }
+}

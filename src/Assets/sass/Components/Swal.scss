@@ -1,0 +1,31 @@
+@import "../Variables.scss";
+
+.swal-overlay {
+    > .swal-modal {
+        > .swal-title {
+            color: $slack-color;
+        }
+        > .swal-content {
+            > input {
+                width: 90%;
+                border: 1px solid $border-color;
+                border-radius: 10px;
+                padding: 6px 10px;
+                outline: none;
+                color: $slack-color;
+
+                &::placeholder {
+                    color: $slack-color-bright;
+                }
+            }
+        }
+
+        > .swal-footer {
+            .swal-button {
+                &--confirm {
+                    background-color: $slack-color;
+                }
+            }
+        }
+    }
+}

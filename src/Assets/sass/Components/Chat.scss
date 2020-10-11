@@ -1,0 +1,51 @@
+@import "./Message.scss";
+@import "./ChatInput.scss";
+
+.chat {
+    flex: 1;
+    height: 100%;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+        height: 8%;
+
+        > .chat__headerLeft {
+            > .chat_channelName {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                text-transform: lowercase;
+
+                > .MuiSvgIcon-root {
+                    margin-left: 10px;
+                    font-size: 28px;
+                }
+            }
+        }
+
+        > .chat__headerRight {
+            > p {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                margin: 0;
+
+                .MuiSvgIcon-root {
+                    margin-right: 5px !important;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &__messages {
+        padding-left: 10px;
+        overflow-y: auto;
+        height: 82%;
+    }
+
+}

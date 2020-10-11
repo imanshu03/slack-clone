@@ -1,0 +1,26 @@
+@import "./Components/Header.scss";
+@import "./Components/Sidebar.scss";
+@import "./Components/Chat.scss";
+@import "./Components/Swal.scss";
+@import "./Components/Login.scss";
+
+html,
+body,
+.viewport,
+#root,
+.app,
+.css-1jwldo8 {
+    height: 100%;
+    width: 100%;
+}
+
+.app {
+    &__body {
+        height: 94%;
+        display: flex;
+    }
+}
+
+.MuiSvgIcon-root {
+    cursor: pointer;
+}
